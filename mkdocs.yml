@@ -1,0 +1,7 @@
+site_name: MkDocs Tutorial
+site_url: https://masa25hw.github.io/mkdocs-tutorial/
+nav:
+  - Home: index.md
+  - UserGuide: userguide.md
+  - About: about.md
+theme: readthedocs
