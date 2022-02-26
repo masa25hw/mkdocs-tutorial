@@ -11,7 +11,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://masa25hw.github.io/mkdocs-tutorial/userguide/</loc>
+         <loc>https://masa25hw.github.io/mkdocs-tutorial/reference/</loc>
+         <lastmod>2022-02-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://masa25hw.github.io/mkdocs-tutorial/process/enginnering_process/</loc>
+         <lastmod>2022-02-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://masa25hw.github.io/mkdocs-tutorial/process/management_process/</loc>
+         <lastmod>2022-02-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://masa25hw.github.io/mkdocs-tutorial/userguide/material_theme/</loc>
+         <lastmod>2022-02-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://masa25hw.github.io/mkdocs-tutorial/userguide/overview/</loc>
          <lastmod>2022-02-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
