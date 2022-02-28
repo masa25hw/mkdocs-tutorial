@@ -1,7 +1,58 @@
 site_name: MkDocs Tutorial
 site_url: https://masa25hw.github.io/mkdocs-tutorial/
+docs_dir: 'docs' # default: 'docs'
+copyright: 'Copyright © 2020 - 2022 - Sample Corporation'
+
+theme:
+    name: material  # MkDocs for Materialに表示スタイルを切替.
+    language: 'ja'  # メニュー言語を日本語に変更.
+    icon:           # サイト名横のアイコン画像を変更.
+      logo: material/school
+      repo: fontawesome/brands/git-alt
+    favicon: images/manual.png # ファビコン画像の設定.docsをルートとするパス指定.
+    features:
+      tabs: true # タブ表示を有効化.
+
+extra:
+  search:
+    language: 'ja'
+
 nav:
   - Home: index.md
-  - UserGuide: userguide.md
+  - UserGuide:
+    - Commands : userguide/overview.md
+    - Material theme: userguide/material_theme.md
+  - Proccess:
+    - マネジメントプロセス: process/management_process.md
+    - エンジニアリングプロセス: process/enginnering_process.md
   - About: about.md
-theme: readthedocs
+# theme: readthedocs
+
+markdown_extensions:
+  - admonition
+  - toc: # 見出しに関する設定。ここでは見出し末尾にアンカーリンクを表示させています。
+      permalink: true
+  - codehilite: # コードブロックに関する表記設定。
+      linenums: true
+      guess_lang: false
+      use_pygments: false
+      noclasses: true
+  - fontawesome_markdown # Webアイコンフォントの表示。
+  - pymdownx.tabbed: # コード表示にタブが使えるようになる
+      alternate_style: true
+  - pymdownx.keys # キーの表示がおしゃれになる (e.g. ++ctrl+alt+del++)
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight # コードをhighlightして表示
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+    - javascripts/config.js
+    # - javascripts/extra.js
+
+extra_css:
+    - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  # - stylesheets/extra.css
